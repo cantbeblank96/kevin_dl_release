@@ -19,7 +19,20 @@ git_push.sh
 
 **/_old_version/
 
+BatchRun_sync_from_kevin_dl.ffs_batch
+
+BatchRun_sync_from_kevin_dl.ffs_gui
+
+.sync.ffs_db
 
 .BackupLogs/
 
 .VersionHistories/
+
+/build
+
+/dist
+
+/*.egg-info
+
+pack_and_distribute.sh
