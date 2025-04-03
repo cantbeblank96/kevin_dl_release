@@ -33,7 +33,7 @@ DEFAULT_TEMPLATE_s = {
 
 @TOOLS.register(name=":face:alignment:by_bbox:affine_trans")
 def affine_trans(image, template, bbox, desired_face_size=None, desired_image_size=None, padding_ls=None,
-                 match_pattern=Match_Pattern.EXPANDED_BBOX, **kwargs):
+                 match_pattern="expanded_bbox", **kwargs):
     """
         基于关键点进行仿射变换的人脸转正
         根据关键点对人脸进行转正，并按照指定的人脸位置和画幅大小进行裁切

@@ -80,7 +80,7 @@ for k, v in list(DEFAULT_TEMPLATE_s.items()):
 
 @TOOLS.register(name=":face:alignment:by_landmarks:affine_trans")
 def affine_trans(image, template, landmarks, desired_face_size=None, desired_image_size=None, padding_ls=None,
-                 match_pattern=Match_Pattern.EYES_NOSE_MOUTH, **kwargs):
+                 match_pattern="eyes_nose_mouth", **kwargs):
     """
         基于关键点进行仿射变换的人脸转正
         根据关键点对人脸进行转正，并按照指定的人脸位置和画幅大小进行裁切

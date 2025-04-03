@@ -3,6 +3,10 @@ import numpy as np
 
 
 def plot_bbox_and_landmarks(image, bbox=None, landmarks=None, landmarks_names=None, person_id=None, b_inplace=True):
+    """
+        参数：
+            bbox:           <list/array> [x_0, y_0, x_1, y_1]
+    """
     if not b_inplace:
         image = image.copy()
     if landmarks_names is None:

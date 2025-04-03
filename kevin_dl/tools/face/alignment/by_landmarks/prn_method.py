@@ -6,7 +6,8 @@ from kevin_dl.tools.variable import TOOLS
 
 @TOOLS.register(name=":face:alignment:by_landmarks:prn_method")
 def prn_method(image, landmarks, desired_face_size=None, desired_image_size=None, padding_ls=None, **kwargs):
-    assert isinstance(landmarks, np.ndarray) and len(landmarks) >= 68
+    landmarks = np.asarray(landmarks)
+    assert len(landmarks) >= 68
 
     # 1. 旋转使得眼睛水平后，找出最左、左右关键点的中点。
     #   先旋转关键点

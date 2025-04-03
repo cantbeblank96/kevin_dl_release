@@ -77,7 +77,7 @@ def parse_landmarks(landmarks, output_contents=None, output_format=Output_Format
             }
         else:
             raise ValueError(
-                f'Currently only supports 5 landmarks and 68 landmarks, but got {len(landmarks)} key points.')
+                f'Currently only supports 5, 68, 106 landmarks, but got {len(landmarks)} key points.')
         res_s.update({
             'leftmost': sorted_by_x[0],
             'topmost': sorted_by_y[0],
