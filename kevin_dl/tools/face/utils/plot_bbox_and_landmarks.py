@@ -9,9 +9,10 @@ def plot_bbox_and_landmarks(image, bbox=None, landmarks=None, landmarks_names=No
     """
     if not b_inplace:
         image = image.copy()
-    if landmarks_names is None:
-        landmarks_names = [f'{i}' for i in range(len(landmarks))]
-    assert len(landmarks_names) == len(landmarks)
+    if landmarks is not None:
+        if landmarks_names is None:
+            landmarks_names = [f'{i}' for i in range(len(landmarks))]
+        assert len(landmarks_names) == len(landmarks)
 
     if bbox is not None:
         bbox = np.asarray(bbox, dtype=int)
