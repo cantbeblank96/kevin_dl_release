@@ -1,0 +1,25 @@
+{
+    "settings": [
+        {
+            "name": ":for_images:torchvision:RandomCrop",
+            "paras": {
+                "size": 32,
+                "padding": 4
+            }
+        },
+        {
+            "name": ":for_images:torchvision:RandomHorizontalFlip",
+            "paras": {
+                "p": 0.5
+            }
+        },
+        "<same>{:for_val:dataset:paras:transform:settings@0}",
+        {
+            "name": ":for_images:torchvision:Normalize",
+            "paras": {
+                "mean": "<eval>(0.4914, 0.4822, 0.4465)",
+                "std": "<eval>(0.2023, 0.1994, 0.201)"
+            }
+        }
+    ]
+}

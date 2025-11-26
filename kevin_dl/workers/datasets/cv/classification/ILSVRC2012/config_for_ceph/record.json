@@ -1,0 +1,209 @@
+{
+    "processed": {
+        "for_train": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "ann_path": true,
+                    "prefix": true,
+                    "transforms": true,
+                    "output_contents": true
+                }
+            },
+            "subset": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        },
+        "for_val": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "ann_path": true,
+                    "prefix": true,
+                    "transforms": true,
+                    "output_contents": true
+                }
+            },
+            "subset": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        },
+        "for_test": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "ann_path": true,
+                    "prefix": true,
+                    "transforms": true,
+                    "output_contents": true
+                }
+            },
+            "subset": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        }
+    },
+    "raw_structure": {
+        "for_train": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "ann_path": false,
+                    "prefix": false,
+                    "transforms": {
+                        "settings": [
+                            {
+                                "name": false,
+                                "paras": {
+                                    "size": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "brightness": false,
+                                    "contrast": false,
+                                    "saturation": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "p": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "mean": false,
+                                    "std": false
+                                }
+                            }
+                        ]
+                    },
+                    "output_contents": false
+                }
+            },
+            "subset": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        },
+        "for_val": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "ann_path": false,
+                    "prefix": false,
+                    "transforms": {
+                        "settings": [
+                            {
+                                "name": false,
+                                "paras": {
+                                    "size": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "size": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "mean": false,
+                                    "std": false
+                                }
+                            }
+                        ]
+                    },
+                    "output_contents": false
+                }
+            },
+            "subset": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        },
+        "for_test": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "ann_path": false,
+                    "prefix": false,
+                    "transforms": {
+                        "settings": [
+                            {
+                                "name": false,
+                                "paras": {
+                                    "size": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "size": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "mean": false,
+                                    "std": false
+                                }
+                            }
+                        ]
+                    },
+                    "output_contents": false
+                }
+            },
+            "subset": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        }
+    },
+    "timestamp": 1713769293.3254554,
+    "kt_version": "1.3.4",
+    "b_keep_identical_relations": false
+}

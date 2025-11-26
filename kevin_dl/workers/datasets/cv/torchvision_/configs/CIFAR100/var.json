@@ -1,0 +1,71 @@
+{
+    "for_train": {
+        "dataset": {
+            "name": ":cv:torchvision:CIFAR100",
+            "paras": {
+                "root": "~/data",
+                "download": true,
+                "transform": {
+                    "backend": ":json",
+                    "name": "2_107544ae3d82"
+                }
+            }
+        },
+        "subset": null,
+        "data_loader": {
+            "batch_size": 128,
+            "num_workers": 8,
+            "drop_last": false,
+            "shuffle": true,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "train"
+    },
+    "for_val": {
+        "dataset": {
+            "name": ":cv:torchvision:CIFAR100",
+            "paras": {
+                "root": "~/data",
+                "download": true,
+                "transform": {
+                    "backend": ":json",
+                    "name": "1_c8296776134a"
+                }
+            }
+        },
+        "subset": null,
+        "data_loader": {
+            "batch_size": 100,
+            "num_workers": 8,
+            "drop_last": false,
+            "shuffle": false,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "val"
+    },
+    "for_test": {
+        "dataset": {
+            "name": ":cv:torchvision:CIFAR100",
+            "paras": {
+                "root": "~/data",
+                "download": true,
+                "transform": {
+                    "backend": ":json",
+                    "name": "0_3917b2171dd8"
+                }
+            }
+        },
+        "subset": null,
+        "data_loader": {
+            "batch_size": 100,
+            "num_workers": 8,
+            "drop_last": false,
+            "shuffle": false,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "test"
+    }
+}

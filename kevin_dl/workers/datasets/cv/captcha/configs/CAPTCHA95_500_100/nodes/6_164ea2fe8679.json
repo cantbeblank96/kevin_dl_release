@@ -1,0 +1,36 @@
+{
+    "settings": [
+        "<same>{:for_val:dataset:paras:transforms:settings@0}",
+        {
+            "name": ":for_images:torchvision:RandomAffine",
+            "paras": {
+                "degrees": 15,
+                "translate": "<eval>(0.02, 0.05)",
+                "shear": 15,
+                "fill": "<same>{:for_train:dataset:paras:captcha_maker:transforms@1:paras:fill}"
+            }
+        },
+        {
+            "name": ":for_images:torchvision:GaussianBlur",
+            "paras": {
+                "kernel_size": 3,
+                "sigma": "<eval>(0.01, 1.5)"
+            }
+        },
+        {
+            "name": ":for_images:torchvision:ColorJitter",
+            "paras": {
+                "brightness": 0.1,
+                "contrast": 0.1,
+                "saturation": 0.1
+            }
+        },
+        {
+            "name": ":for_images:torchvision:Normalize",
+            "paras": {
+                "mean": "<eval>(0.8643, 0.8644, 0.8643)",
+                "std": "<eval>(0.1666, 0.1666, 0.1666)"
+            }
+        }
+    ]
+}

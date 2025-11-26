@@ -1,0 +1,91 @@
+{
+    "for_train": {
+        "dataset": {
+            "name": ":cv:torchvision:CIFAR10",
+            "paras": {
+                "root": "~/data",
+                "download": true,
+                "train": true,
+                "transform": {
+                    "backend": ":json",
+                    "name": "2_107544ae3d82"
+                }
+            }
+        },
+        "subset": null,
+        "adjuster": {
+            "name": ":adjuster:Class_Imbalance_Maker",
+            "paras": {
+                "imbalanced_dist": {
+                    "type_": "exponential_decay",
+                    "paras": {
+                        "gamma": 0.05
+                    }
+                },
+                "class_order_func": "randomly",
+                "label_func": "<eval><eval>lambda x: x[1]",
+                "dst_num": 1.0,
+                "b_quick_loading": true
+            }
+        },
+        "data_loader": {
+            "batch_size": 128,
+            "num_workers": 8,
+            "drop_last": false,
+            "shuffle": true,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "train"
+    },
+    "for_val": {
+        "dataset": {
+            "name": ":cv:torchvision:CIFAR10",
+            "paras": {
+                "root": "~/data",
+                "download": true,
+                "train": true,
+                "transform": {
+                    "backend": ":json",
+                    "name": "1_c8296776134a"
+                }
+            }
+        },
+        "subset": null,
+        "adjuster": null,
+        "data_loader": {
+            "batch_size": 100,
+            "num_workers": 8,
+            "drop_last": false,
+            "shuffle": false,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "val"
+    },
+    "for_test": {
+        "dataset": {
+            "name": ":cv:torchvision:CIFAR10",
+            "paras": {
+                "root": "~/data",
+                "download": true,
+                "train": false,
+                "transform": {
+                    "backend": ":json",
+                    "name": "0_3917b2171dd8"
+                }
+            }
+        },
+        "subset": null,
+        "adjuster": null,
+        "data_loader": {
+            "batch_size": 100,
+            "num_workers": 8,
+            "drop_last": false,
+            "shuffle": false,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "test"
+    }
+}

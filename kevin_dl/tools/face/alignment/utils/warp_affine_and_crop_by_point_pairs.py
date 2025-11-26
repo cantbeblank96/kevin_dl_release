@@ -123,7 +123,7 @@ if __name__ == '__main__':
     from kevin_toolbox.data_flow.file import json_
     from kevin_dl.tools.face.utils import plot_bbox_and_landmarks
 
-    data_dir = "/home/SENSETIME/xukaiming/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data"
+    data_dir = "~/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data"
 
     # 这个基准是112*96的面部特征点的坐标
     BASIC_LANDMARK = np.array([

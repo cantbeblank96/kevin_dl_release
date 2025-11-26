@@ -1,0 +1,23 @@
+2023-08-30 15:24:53,991 - :temp - INFO - generating config for dataset ILSVRC2012_for_ceph
+2023-08-30 15:25:53,291 - :temp - INFO - for_train
+2023-08-30 15:25:55,224 - :temp - INFO - (224, 224, 3)
+2023-08-30 15:25:55,225 - :temp - INFO - {'image_path': '<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/train/n01440764/n01440764_10026.JPEG', 'label': 0}
+2023-08-30 15:25:55,225 - :temp - INFO - for_val
+2023-08-30 15:25:55,236 - :temp - INFO - (224, 224, 3)
+2023-08-30 15:25:55,236 - :temp - INFO - {'image_path': '<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/val/ILSVRC2012_val_00000001.JPEG', 'label': 65}
+2023-08-30 15:25:55,236 - :temp - INFO - for_test
+2023-08-30 15:25:55,261 - :temp - INFO - (224, 224, 3)
+2023-08-30 15:25:55,261 - :temp - INFO - {'image_path': '<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/test/ILSVRC2012_test_00000001.JPEG', 'label': 0}
+2023-08-30 15:25:55,353 - :temp - INFO - - for_train
+  - dataset: 1281167
+  - subset: None
+  - data_loader: 1251
+- for_val
+  - dataset: 50000
+  - subset: None
+  - data_loader: 250
+- for_test
+  - dataset: 100000
+  - subset: None
+  - data_loader: 500
+

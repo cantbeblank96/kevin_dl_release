@@ -17,12 +17,12 @@ def count_flops_of_model(model, input_shape_wout_bz=None, input_shape_with_bz=No
 
     if isinstance(inputs, (list,)):
         inputs = tuple(inputs)
-    # try:
-    from torchprofile import profile_macs
-    flops = profile_macs(model, args=inputs)
-    # except:
-    #     from thop import profile
-    #     flops, params = profile(model, inputs=inputs, verbose=False)
+    try:
+        from torchprofile import profile_macs
+        flops = profile_macs(model, args=inputs)
+    except:
+        from thop import profile
+        flops, params = profile(model, inputs=inputs, verbose=False)
     return flops
 
 

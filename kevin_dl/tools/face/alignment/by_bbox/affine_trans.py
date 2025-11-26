@@ -93,7 +93,7 @@ if __name__ == '__main__':
     from kevin_dl.tools.face.utils import plot_bbox_and_landmarks
     from kevin_dl.tools.face.detect import MTCNN_Detector
 
-    data_dir = "/home/SENSETIME/xukaiming/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data"
+    data_dir = "~/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data"
     output_dir = os.path.join(os.path.dirname(__file__), "output")
     os.makedirs(output_dir, exist_ok=True)
 

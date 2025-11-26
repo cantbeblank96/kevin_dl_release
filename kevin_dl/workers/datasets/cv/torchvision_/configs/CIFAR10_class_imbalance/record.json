@@ -1,0 +1,201 @@
+{
+    "processed": {
+        "for_train": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "root": true,
+                    "download": true,
+                    "train": true,
+                    "transform": true
+                }
+            },
+            "subset": true,
+            "adjuster": {
+                "name": true,
+                "paras": {
+                    "imbalanced_dist": {
+                        "type_": true,
+                        "paras": {
+                            "gamma": true
+                        }
+                    },
+                    "class_order_func": true,
+                    "label_func": true,
+                    "dst_num": true,
+                    "b_quick_loading": true
+                }
+            },
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        },
+        "for_val": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "root": true,
+                    "download": true,
+                    "train": true,
+                    "transform": true
+                }
+            },
+            "subset": true,
+            "adjuster": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        },
+        "for_test": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "root": true,
+                    "download": true,
+                    "train": true,
+                    "transform": true
+                }
+            },
+            "subset": true,
+            "adjuster": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        }
+    },
+    "raw_structure": {
+        "for_train": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "root": false,
+                    "download": false,
+                    "train": false,
+                    "transform": {
+                        "settings": [
+                            {
+                                "name": false,
+                                "paras": {
+                                    "size": false,
+                                    "padding": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "p": false
+                                }
+                            },
+                            false,
+                            {
+                                "name": false,
+                                "paras": {
+                                    "mean": false,
+                                    "std": false
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "subset": false,
+            "adjuster": {
+                "name": false,
+                "paras": {
+                    "imbalanced_dist": {
+                        "type_": false,
+                        "paras": {
+                            "gamma": false
+                        }
+                    },
+                    "class_order_func": false,
+                    "label_func": false,
+                    "dst_num": false,
+                    "b_quick_loading": false
+                }
+            },
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        },
+        "for_val": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "root": false,
+                    "download": false,
+                    "train": false,
+                    "transform": {
+                        "settings": [
+                            {
+                                "name": false,
+                                "paras": {}
+                            },
+                            false
+                        ]
+                    }
+                }
+            },
+            "subset": false,
+            "adjuster": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        },
+        "for_test": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "root": false,
+                    "download": false,
+                    "train": false,
+                    "transform": false
+                }
+            },
+            "subset": false,
+            "adjuster": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        }
+    },
+    "timestamp": 1744725444.389697,
+    "kt_version": "1.4.10",
+    "b_keep_identical_relations": true
+}

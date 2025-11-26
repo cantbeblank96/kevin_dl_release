@@ -17,6 +17,6 @@ assert args["verbose"] in [0, 1]
 root_dir = os.path.abspath(os.path.split(__file__)[0])
 
 # 打包
-for folder in ["build", "dist", "kevin_toolbox.egg-info"]:
+for folder in ["build", "dist", "kevin_dl.egg-info"]:
     shutil.rmtree(os.path.join(root_dir, folder), ignore_errors=True)
 os.system(f'cd {root_dir};python setup.py sdist bdist_wheel')

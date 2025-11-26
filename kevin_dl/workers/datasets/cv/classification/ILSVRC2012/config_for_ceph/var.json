@@ -1,0 +1,74 @@
+{
+    "for_train": {
+        "dataset": {
+            "name": ":cv:classification:Imagenet_Dataset",
+            "paras": {
+                "ann_path": "<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/meta/train.txt",
+                "prefix": "<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/train",
+                "transforms": {
+                    "backend": ":json",
+                    "name": "2_164ea2fe8679"
+                },
+                "output_contents": "<eval>('fin', 'image_path', 'label')"
+            }
+        },
+        "subset": null,
+        "data_loader": {
+            "batch_size": 1024,
+            "num_workers": 4,
+            "drop_last": true,
+            "shuffle": true,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "train"
+    },
+    "for_val": {
+        "dataset": {
+            "name": ":cv:classification:Imagenet_Dataset",
+            "paras": {
+                "ann_path": "<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/meta/val.txt",
+                "prefix": "<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/val",
+                "transforms": {
+                    "backend": ":json",
+                    "name": "1_5d0110c8438d"
+                },
+                "output_contents": "<eval>('fin', 'image_path', 'label')"
+            }
+        },
+        "subset": null,
+        "data_loader": {
+            "batch_size": 200,
+            "num_workers": 4,
+            "drop_last": false,
+            "shuffle": false,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "val"
+    },
+    "for_test": {
+        "dataset": {
+            "name": ":cv:classification:Imagenet_Dataset",
+            "paras": {
+                "ann_path": "<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/meta/test.txt",
+                "prefix": "<ceph>openmmlab:s3://openmmlab/datasets/classification/imagenet/test",
+                "transforms": {
+                    "backend": ":json",
+                    "name": "0_92a51a6ec0e3"
+                },
+                "output_contents": "<eval>('fin', 'image_path', 'label')"
+            }
+        },
+        "subset": null,
+        "data_loader": {
+            "batch_size": 200,
+            "num_workers": 4,
+            "drop_last": false,
+            "shuffle": false,
+            "pin_memory": true
+        },
+        "seed": 114514,
+        "task_type": "test"
+    }
+}

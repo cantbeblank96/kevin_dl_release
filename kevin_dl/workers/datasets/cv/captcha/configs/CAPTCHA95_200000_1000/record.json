@@ -1,0 +1,366 @@
+{
+    "processed": {
+        "for_train": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "captcha_maker": true,
+                    "label_maker": true,
+                    "cache_dir": true,
+                    "dataset_size": true,
+                    "transforms": true,
+                    "task_type": true,
+                    "output_contents": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "subset": true,
+            "adjuster": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        },
+        "for_val": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "captcha_maker": true,
+                    "label_maker": true,
+                    "cache_dir": true,
+                    "dataset_size": true,
+                    "transforms": true,
+                    "task_type": true,
+                    "output_contents": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "subset": true,
+            "adjuster": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        },
+        "for_test": {
+            "dataset": {
+                "name": true,
+                "paras": {
+                    "captcha_maker": true,
+                    "label_maker": true,
+                    "cache_dir": true,
+                    "dataset_size": true,
+                    "transforms": true,
+                    "task_type": true,
+                    "output_contents": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "subset": true,
+            "adjuster": true,
+            "data_loader": {
+                "batch_size": true,
+                "num_workers": true,
+                "drop_last": true,
+                "shuffle": true,
+                "pin_memory": true
+            },
+            "seed": true,
+            "task_type": true
+        }
+    },
+    "raw_structure": {
+        "for_train": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "captcha_maker": {
+                        "width": false,
+                        "height": false,
+                        "font_size": false,
+                        "color_options_of_text": false,
+                        "color_of_bg": false,
+                        "max_offset_of_text": false,
+                        "b_use_transforms": false,
+                        "transforms": [
+                            {
+                                "name": false,
+                                "paras": {}
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "degrees": false,
+                                    "translate": false,
+                                    "shear": false,
+                                    "fill": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "kernel_size": false,
+                                    "sigma": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "brightness": false,
+                                    "contrast": false,
+                                    "saturation": false
+                                }
+                            }
+                        ],
+                        "b_add_noise_line": false,
+                        "color_options_of_line": false,
+                        "b_add_noise_point": false
+                    },
+                    "label_maker": {
+                        "options": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                        ],
+                        "weights": false
+                    },
+                    "cache_dir": false,
+                    "dataset_size": false,
+                    "transforms": {
+                        "settings": [
+                            false,
+                            {
+                                "name": false,
+                                "paras": {
+                                    "degrees": false,
+                                    "translate": false,
+                                    "shear": false,
+                                    "fill": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "kernel_size": false,
+                                    "sigma": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "brightness": false,
+                                    "contrast": false,
+                                    "saturation": false
+                                }
+                            },
+                            {
+                                "name": false,
+                                "paras": {
+                                    "mean": false,
+                                    "std": false
+                                }
+                            }
+                        ]
+                    },
+                    "task_type": false,
+                    "output_contents": [
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            },
+            "subset": false,
+            "adjuster": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        },
+        "for_val": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "captcha_maker": false,
+                    "label_maker": false,
+                    "cache_dir": false,
+                    "dataset_size": false,
+                    "transforms": {
+                        "settings": [
+                            {
+                                "name": false,
+                                "paras": {}
+                            },
+                            false
+                        ]
+                    },
+                    "task_type": false,
+                    "output_contents": [
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            },
+            "subset": false,
+            "adjuster": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        },
+        "for_test": {
+            "dataset": {
+                "name": false,
+                "paras": {
+                    "captcha_maker": false,
+                    "label_maker": false,
+                    "cache_dir": false,
+                    "dataset_size": false,
+                    "transforms": false,
+                    "task_type": false,
+                    "output_contents": [
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            },
+            "subset": false,
+            "adjuster": false,
+            "data_loader": {
+                "batch_size": false,
+                "num_workers": false,
+                "drop_last": false,
+                "shuffle": false,
+                "pin_memory": false
+            },
+            "seed": false,
+            "task_type": false
+        }
+    },
+    "timestamp": 1751881547.1893408,
+    "kt_version": "1.4.12",
+    "b_keep_identical_relations": true
+}

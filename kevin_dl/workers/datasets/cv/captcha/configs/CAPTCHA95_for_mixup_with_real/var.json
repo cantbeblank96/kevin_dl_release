@@ -1,0 +1,162 @@
+{
+  "for_train": {
+    "dataset": {
+      "name": ":cv:Captcha_Dataset:0.0",
+      "paras": {
+        "captcha_maker": {
+          "backend": ":json",
+          "name": "8_8893291be082"
+        },
+        "label_maker": {
+          "backend": ":json",
+          "name": "7_0375966219fc"
+        },
+        "cache_dir": "~/data/captcha/CAPTCHA95_500_100/train",
+        "label_mapper": "~/data/captcha/label_mapper.json",
+        "dataset_size": 47500,
+        "transforms": {
+          "backend": ":json",
+          "name": "6_164ea2fe8679"
+        },
+        "task_type": "train",
+        "output_contents": [
+          "raw",
+          "fin",
+          "label"
+        ],
+        "b_auto_save_image_to_cache": false
+      }
+    },
+    "subset": null,
+    "adjuster": null,
+    "data_loader": {
+      "batch_size": 128,
+      "num_workers": 8,
+      "drop_last": false,
+      "shuffle": true,
+      "pin_memory": true
+    },
+    "seed": 114514,
+    "task_type": "train"
+  },
+  "for_train_real": {
+    "dataset": {
+      "name": ":cv:Captcha_Dataset:0.0",
+      "paras": {
+        "captcha_maker": {
+          "backend": ":json",
+          "name": "8_8893291be082"
+        },
+        "label_maker": {
+          "backend": ":json",
+          "name": "7_0375966219fc"
+        },
+        "cache_dir": null,
+        "label_mapper": "~/data/captcha/label_mapper.json",
+        "dataset_size": 47500,
+        "transforms": {
+          "backend": ":json",
+          "name": "6_164ea2fe8679"
+        },
+        "task_type": "train",
+        "output_contents": [
+          "raw",
+          "fin",
+          "label"
+        ],
+        "b_auto_save_image_to_cache": false
+      }
+    },
+    "subset": null,
+    "adjuster": null,
+    "data_loader": {
+      "batch_size": 128,
+      "num_workers": 8,
+      "drop_last": false,
+      "shuffle": true,
+      "pin_memory": true
+    },
+    "seed": 1919810,
+    "task_type": "train"
+  },
+  "for_val": {
+    "dataset": {
+      "name": ":cv:Captcha_Dataset:0.0",
+      "paras": {
+        "captcha_maker": {
+          "backend": ":json",
+          "name": "5_732fefd90a38"
+        },
+        "label_maker": {
+          "backend": ":json",
+          "name": "4_9b5a4a36c0e1"
+        },
+        "cache_dir": "~/data/captcha/CAPTCHA95_500_100/train",
+        "label_mapper": "~/data/captcha/label_mapper.json",
+        "dataset_size": 47500,
+        "transforms": {
+          "backend": ":json",
+          "name": "3_5d0110c8438d"
+        },
+        "task_type": "val",
+        "output_contents": [
+          "raw",
+          "fin",
+          "label"
+        ],
+        "b_auto_save_image_to_cache": false
+      }
+    },
+    "subset": null,
+    "adjuster": null,
+    "data_loader": {
+      "batch_size": 100,
+      "num_workers": 8,
+      "drop_last": false,
+      "shuffle": false,
+      "pin_memory": true
+    },
+    "seed": 114514,
+    "task_type": "val"
+  },
+  "for_test": {
+    "dataset": {
+      "name": ":cv:Captcha_Dataset:0.0",
+      "paras": {
+        "captcha_maker": {
+          "backend": ":json",
+          "name": "2_9c495b40cf4b"
+        },
+        "label_maker": {
+          "backend": ":json",
+          "name": "1_136688a16fa9"
+        },
+        "cache_dir": "~/data/captcha/CAPTCHA95_500_100/test",
+        "label_mapper": "~/data/captcha/label_mapper.json",
+        "dataset_size": 9500,
+        "transforms": {
+          "backend": ":json",
+          "name": "0_92a51a6ec0e3"
+        },
+        "task_type": "test",
+        "output_contents": [
+          "raw",
+          "fin",
+          "label"
+        ],
+        "b_auto_save_image_to_cache": false
+      }
+    },
+    "subset": null,
+    "adjuster": null,
+    "data_loader": {
+      "batch_size": 100,
+      "num_workers": 8,
+      "drop_last": false,
+      "shuffle": false,
+      "pin_memory": true
+    },
+    "seed": 903904,
+    "task_type": "test"
+  }
+}

@@ -9,7 +9,7 @@
 ```shell
 numpy>=1.19
 pytorch>=1.2
-kevin-toolbox>=1.4.5
+kevin-toolbox>=1.4.10
 ```
 
 安装方法：
@@ -26,6 +26,5 @@ pip install kevin-dl  --no-dependencies
 
 [版本更新记录](./notes/Release_Record.md)：
 
-- v 0.0.2（2025-04-09）【bug fix】
-  - utils
-    - 修复了 utils 无法导入的问题。
+- v 0.1.0 （2025-11-26）【new feature】
+  - 【new feature】增加了 deploy, models, workers,  workflow 等关键模块。

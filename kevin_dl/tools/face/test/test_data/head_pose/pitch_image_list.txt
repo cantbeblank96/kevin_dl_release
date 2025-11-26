@@ -1,0 +1,5 @@
+0.png
+-30.png
+30.png
+-60.png
+60.png

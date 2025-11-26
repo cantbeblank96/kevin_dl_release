@@ -17,3 +17,9 @@
   - utils
     - 修复了 utils 无法导入的问题。
 
+
+
+#### v0.1
+
+- v 0.1.0 （2025-11-26）【new feature】
+  - 【new feature】增加了 deploy, models, workers,  workflow 等关键模型。

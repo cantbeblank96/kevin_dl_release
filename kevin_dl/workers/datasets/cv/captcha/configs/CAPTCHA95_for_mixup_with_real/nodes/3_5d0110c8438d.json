@@ -1,0 +1,9 @@
+{
+    "settings": [
+        {
+            "name": ":for_images:torchvision:ToTensor",
+            "paras": {}
+        },
+        "<same>{:for_train:dataset:paras:transforms:settings@4}"
+    ]
+}

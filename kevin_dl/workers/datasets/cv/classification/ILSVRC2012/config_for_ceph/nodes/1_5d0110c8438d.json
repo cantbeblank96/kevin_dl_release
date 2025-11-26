@@ -1,0 +1,23 @@
+{
+    "settings": [
+        {
+            "name": ":for_images:torchvision:Resize",
+            "paras": {
+                "size": 256
+            }
+        },
+        {
+            "name": ":for_images:torchvision:CenterCrop",
+            "paras": {
+                "size": 224
+            }
+        },
+        {
+            "name": ":for_images:torchvision:ToTensor_and_Normalize",
+            "paras": {
+                "mean": "<eval>(0.485, 0.456, 0.406)",
+                "std": "<eval>(0.229, 0.224, 0.225)"
+            }
+        }
+    ]
+}

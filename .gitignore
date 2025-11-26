@@ -36,3 +36,5 @@ BatchRun_sync_from_kevin_dl.ffs_gui
 /*.egg-info
 
 pack_and_distribute.sh
+
+__remove_privacy_information/

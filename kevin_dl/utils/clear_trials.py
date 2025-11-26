@@ -20,7 +20,7 @@ cur=`pwd`
 export PYTHONPATH=$cur:$PYTHONPATH
 python kevin_dl/utils/clear_trials.py \
 --study_name default \
---input_dir /home/SENSETIME/xukaiming/Desktop/gitlab_repos/kevin_dl/result/quantify_image_quality_based_on_comparison/optimize_hyperparas/2023-08-19 \
+--input_dir ~/Desktop/gitlab_repos/kevin_dl/result/quantify_image_quality_based_on_comparison/optimize_hyperparas/2023-08-19 \
 """
 
 # ------------------------------ 接受外部参数 ------------------------------ #

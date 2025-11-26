@@ -3,6 +3,8 @@ import warnings
 
 
 def set_client(cfg_path, name):
+    if cfg_path is None:
+        return
     try:
         from petrel_client.client import Client
     except:

@@ -32,7 +32,7 @@ def rotate_image(image, angle, flags=cv2.INTER_LINEAR, border_mode=cv2.BORDER_CO
 
 
 if __name__ == '__main__':
-    image_path = "/home/SENSETIME/xukaiming/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data/head_pose/raw_face/0.png"
+    image_path = "~/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data/head_pose/raw_face/0.png"
     ori_image = cv2.imread(image_path)
     rotated_image = rotate_image(ori_image, 90)
     cv2.imwrite(image_path + "_rotated.png", rotated_image)

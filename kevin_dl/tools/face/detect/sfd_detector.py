@@ -90,7 +90,7 @@ if __name__ == '__main__':
     import cv2
 
     image = cv2.imread(
-        "/home/SENSETIME/xukaiming/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data/rotate/image_83.jpg")
+        "~/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data/rotate/image_83.jpg")
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     detector = SFD_Detector()
     angle = detector.find_best_rotate_angle(image=image)
@@ -98,5 +98,5 @@ if __name__ == '__main__':
 
     res_image = rotate_image(image=image, angle=angle)
     cv2.imwrite(filename=os.path.join(
-        "/home/SENSETIME/xukaiming/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data/rotate/temp.jpg"),
+        "~/Desktop/gitlab_repos/kevin_dl/kevin_dl/tools/face/test/test_data/rotate/temp.jpg"),
         img=res_image)
